@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <title>TTS</title>
+  </head>
+  <body>
+  
+<header class="header">
+  <nav class="navbar navbar-light border-bottom shadow-sm">
+    <div class="container">
+      <a class="navbar-brand font-weight-bold" href="index.html" style="text-decoration: none;"><img src="https://image.flaticon.com/icons/svg/54/54761.svg" height="40px"> &#8594; <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/500px-Speaker_Icon.svg.png" height="50px"></a>
+    </div>
+  </nav>
+</header>
+
+  <div class="full-width-row jumbotron">
+  <div class="container">
+  <h1>Text to Speech</h1>
+  <p class="lead">Text-to-speech (TTS) is a type of assistive technology that reads digital text aloud. It’s sometimes called “read aloud” technology.
+
+With a click of a button or the touch of a finger, TTS can take words on a computer or other digital device and convert them into audio. TTS is very helpful for kids who struggle with reading. But it can also help kids with writing and editing, and even focusing.
+TTS works with nearly every personal digital device, including computers, smartphones and tablets. All kinds of text files can be read aloud, including Word and Pages documents. Even online web pages can be read aloud.</p>
+  <ul class="list-inline">
+  <li class="list-inline-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#000000" width="13" height="13"><path d="M14.9,1.1C14.2,0.4,13.2,0,12.1,0c-1.1,0-2,0.4-2.8,1.1L7.7,2.8C7,3.5,6.5,4.5,6.5,5.6 c0,0.4,0.1,0.8,0.2,1.2C6.4,6.6,6,6.5,5.6,6.5c-1.1,0-2,0.4-2.8,1.1L1.1,9.4C0.4,10.1,0,11,0,12.1c0,1.1,0.4,2.1,1.1,2.8 C1.8,15.6,2.8,16,3.9,16c1.1,0,2-0.4,2.8-1.1l1.7-1.7c0.7-0.7,1.1-1.7,1.1-2.8c0-0.4-0.1-0.8-0.2-1.2c0.4,0.1,0.8,0.2,1.2,0.2 c1.1,0,2-0.4,2.8-1.1l1.7-1.7C15.6,5.9,16,5,16,3.9C16,2.8,15.6,1.8,14.9,1.1z M7.3,12.2l-1.7,1.7c-0.5,0.5-1.1,0.7-1.7,0.7 c-0.7,0-1.3-0.3-1.8-0.7c-0.4-0.4-0.7-1.1-0.7-1.8c0-0.7,0.3-1.3,0.7-1.7l1.7-1.7C4.3,8.3,4.9,8,5.6,8C6,8,6.3,8.1,6.7,8.3l-2.1,2.1 l1,1l2.1-2.1C7.9,9.7,8,10,8,10.4C8,11.1,7.7,11.7,7.3,12.2z M13.8,5.6l-1.7,1.7C11.7,7.7,11.1,8,10.4,8C10,8,9.6,7.9,9.3,7.7 l2.1-2.1l-1-1L8.3,6.7C8.1,6.4,8,6,8,5.6c0-0.7,0.3-1.3,0.7-1.7l1.7-1.7c0.5-0.5,1.1-0.7,1.7-0.7c0.7,0,1.3,0.3,1.7,0.7 s0.7,1.1,0.7,1.7C14.5,4.5,14.3,5.2,13.8,5.6z"></path></svg><span class="get-started font-weight-bold">Get Started</span></li>
+  <li class="list-inline-item"><a href="#" class="link">API reference</a></li>
+  <li class="list-inline-item"><a href="#" class="link">Documentation</a></li>
+  <li class="list-inline-item"><a href="#" class="link">Fork on GitHub</a></li>
+  <li class="list-inline-item"><a href="#" class="btn btn-primary btn-sm rounded-pill" role="button" style="text-decoration: none;">Start for free in IBM Cloud</a></li>
+</ul>
+</div>
+</div>
+  <div class="container" style="margin-bottom: 5rem;">
+    <p class="info">This system is for demonstration purposes only and is not intended to process Personal Data. No Personal Data is to be entered into this system as it may not have the necessary controls in place to meet the requirements of the General Data Protection Regulation (EU) 2016/679</p>
+    <p class="info">By using this application, you agree to the  <a href="" style="color: #000;">Terms of Use</a></p>
+    <h2>Language Selection</h2>
+    <p class="lead">In the list below you can select your wanted language.</p>
+<div>
+<select name="lang">
+  <option value="en">English</option>
+  <option value="de">German</option>
+  <option value="fr">French</option>
+  <option value="es">Spanish</option>
+</select>
+</div>
+<div>
+<textarea type="text" name="Text" id="clear" placeholder="Type here..."></textarea>
+</div>
+<div class="speak_button">
+<button class="btn btn-outline-primary rounded-pill say">Speech</button>
+<button type="button" class="btn btn-outline-dark rounded-pill" onclick="reset()"style="float: right;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="#000000" width="16" height="16" class="icon icon"><path d="M19,5C12.4,5,7,10.4,7,17v6.6l-4.3-4.3l-1.4,1.4L8,27.4l6.7-6.7l-1.4-1.4L9,23.6V17c0-5.5,4.5-10,10-10s10,4.5,10,10 c0,2.7-1,5.2-2.9,7.1l1.4,1.4c2.3-2.3,3.5-5.3,3.5-8.5C31,10.4,25.6,5,19,5z"></path></svg>&nbsp&nbsp&nbspReset</button>
+</div>
+<audio class="speech" hidden></audio>
+
+
+<script>
+$(function() {
+$('button.say').on('click',function(e){
+e.preventDefault();
+var text = $('textarea[name="Text"]').val();
+text = encodeURIComponent(text);
+console.log(text);
+var select = $('select[name="lang"]').val();
+var url = "https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=" + select + "&q=" + text;
+$('audio').attr('src', url).get(0).play();
+});
+});
+
+function reset() {
+  document.getElementById("clear").value = "";
+}
+</script>
+</div>
+  
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="js/main.js" type="text/javascript"></script>
+  </body>
+</html>

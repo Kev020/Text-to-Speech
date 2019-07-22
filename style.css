@@ -1,0 +1,96 @@
+body{
+	font-family: "Helvetica Neue",Helvetica,"Open Sans",Arial,"Lucida Grande",Roboto,sans-serif;
+}
+.jumbotron{
+	margin: 0;
+}
+.container{
+	margin: none;
+	padding:0rem 1rem;
+}
+.full-width-row{
+	padding: 48px 0;
+}
+h1{
+	color: #007bff;
+}
+h2{
+	margin: 32px 0 0;
+	color: #007bff;
+}
+.lead{
+	font-size: 1rem;
+	max-width: 70%;
+	font-weight:300;
+}
+ul .link{
+	color: #000;
+	text-decoration: none;
+	border-bottom:1px solid #000;
+
+}
+ul .link:hover{
+	color: #686868;
+	text-decoration: none;
+	border-bottom:1px solid #686868;
+
+}
+ul .btn{
+	font-size:.6875rem;
+	padding: .3rem 1rem;
+}
+a{
+	text-decoration: underline;
+}
+li{
+
+	font-size:.6875rem;
+}
+.get-started{
+	margin-left:.5rem;
+	font-weight:700;
+	vertical-align:middle;
+	font-size:.8rem;
+}
+.info{
+	font-size: .8rem;
+	color: #686868;
+	margin: 20px 0 0px;
+}
+textarea{
+	width: 80%;
+	height: 10rem;
+	border: 1px solid #686868;
+}
+select{
+	width: 80%;
+	height: 2.5rem; 
+	border: 2px solid #686868;
+	margin-bottom: 2rem;
+}	
+
+.speak_button{
+	margin: 20px 0;
+	width: 80%;
+}
+button:hover svg{
+	filter: invert(100%);
+}
+
+@media (max-width:768px){
+
+	.lead{
+	max-width: 100%;
+
+	}
+
+textarea{
+	width: 100%;
+}
+select{
+	width: 100%;
+}
+.speak_button{
+	width: 100%;
+}
+}
