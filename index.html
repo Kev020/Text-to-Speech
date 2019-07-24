@@ -69,7 +69,14 @@ var text = $('textarea[name="Text"]').val();
 text = encodeURIComponent(text);
 console.log(text);
 var select = $('select[name="lang"]').val();
+
+if (select == 'en') {
 var url = "https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=" + select + "-CN&q=" + text + "&hint=" + select;
+}
+else{
+var url = "https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=" + select + "&q=" + text + "&hint=" + select;
+}
+
 $('audio').attr('src', url).get(0).play();
 });
 });
